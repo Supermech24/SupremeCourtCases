@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-slider": "^1.1.2",
+    "bootstrap-slider": "^11.0.2",
+    "jquery": "^3.7.1",
+    "next": "14.1.4",
+    "rc-slider": "^10.5.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

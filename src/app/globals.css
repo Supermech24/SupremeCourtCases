@@ -2,28 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #d9e9e4;
 }
 
 @layer utilities {
@@ -31,3 +11,267 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+
+
+/* Main page styles begin here */
+
+
+
+
+
+#main-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: darkslategrey;
+  font-size: 18px;
+}
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 6%;
+  background-color: #c4c4c4;
+}
+
+#title-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#info-icon {
+  margin-right: 0.5%;
+}
+
+#home-icon {
+  margin-left: 0.5%;
+}
+
+#info-icon-img {
+  height: 100%;
+  width: 100%;
+}
+
+#home-icon-img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+/* Case styles begin here */
+
+
+
+
+
+#case-grid {
+  margin: 1%;
+}
+
+#case-box {
+  border-width: 1px;
+  border-color: rgb(92, 68, 36);
+  background-color: #e2e2e2;
+  position: relative;
+  padding: 2rem 1rem 4rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#case-box:hover {
+  background-color: #c3dde5;
+}
+
+#liberty-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #c4c4c4;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid darkslategray;
+}
+
+#liberty-ranking {
+  margin-left: 2%;
+}
+
+#slider-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 40%;
+}
+
+#emoji-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#emoji-box div {
+  font-size: 20px;
+}
+
+.movement-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Info page styles
+*/
+
+
+
+
+#info-page {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ gap: 20px;
+ padding-left:20px;
+ padding-right:20px;
+ padding-bottom:20px;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size:18px;
+ text-align: center;
+ align-items: center;
+ color:darkslategrey;
+}
+
+
+#title {
+ text-align: center;
+ font-size: 26px;
+ margin-bottom: 8px;
+ font-weight:500;
+}
+
+
+#website-summary, #ex-slider-box, #about {
+ background-color: #E2E2E2;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ margin: 0 10%;
+}
+
+
+#example-slider {
+ width: 60%;
+ margin: auto;
+}
+
+
+#slider-ex {
+ justify-content: center;
+ margin: 20px 0;
+}
+
+
+#ex-slider-box {
+ gap: 15px;
+}
+
+
+#credits {
+ background-color: #E2E2E2;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ min-width:40%;
+}
+
+
+.credit-card {
+ background-color: #eeeeee;
+ padding: 10px;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#about div {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+#about {
+  min-width:30%;
+  max-width:30%;
+}
+
+
+
+
+/* Specific case page styles*/
+
+
+
+
+#center {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-box {
+  display:flex;
+  justify-content: space-evenly;
+  background-color: #E2E2E2;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin:10px;
+  padding: 10px;
+}
+
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+
+#position-box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-content: center;
+}
+
+#title-big {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 4px;
+  font-weight:500;
+}
+
+
+
